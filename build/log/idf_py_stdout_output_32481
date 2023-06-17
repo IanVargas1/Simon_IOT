@@ -1,0 +1,12 @@
+[0/1] Re-running CMake...
+-- Component directory /home/kali/esp/touch_sensor/components/mqtt does not contain a CMakeLists.txt file. No component will be added
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+Processing 2 dependencies:
+[1/2] espressif/led_strip (2.3.2)
+[2/2] idf (5.2.0)
+-- Configuring incomplete, errors occurred!
+See also "/home/kali/esp/touch_sensor/build/CMakeFiles/CMakeOutput.log".
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/kali/esp/touch_sensor -B/home/kali/esp/touch_sensor/build

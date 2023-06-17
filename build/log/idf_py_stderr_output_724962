@@ -1,0 +1,240 @@
+[0;33m--- idf_monitor on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400811e8: call_start_cpu1 at /home/kali/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400dda4b: task_wdt_timeout_handling at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x400ddbd2: task_wdt_isr at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x4008338d: _xt_lowint1 at /home/kali/esp/esp-idf/components/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x400dbd4f: touch_ll_meas_is_done at /home/kali/esp/esp-idf/components/hal/esp32/include/hal/touch_sensor_ll.h:500 (discriminator 1)
+ (inlined by) _touch_pad_read at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:366 (discriminator 1)
+[0m
+[0;33m0x400dbdc5: touch_pad_filter_cb at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:109
+[0m
+[0;33m0x400d4bb5: timer_process_alarm at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:451
+[0m
+[0;33m0x400d4c01: timer_task at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:477 (discriminator 1)
+[0m
+[0;33m0x4008b6b9: vPortTaskWrapper at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400dda4b: task_wdt_timeout_handling at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x400ddbd2: task_wdt_isr at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x4008338d: _xt_lowint1 at /home/kali/esp/esp-idf/components/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x4008b99f: vPortClearInterruptMaskFromISR at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+ (inlined by) vPortExitCritical at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+[0m
+[0;33m0x40089630: xQueueSemaphoreTake at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1720
+[0m
+[0;33m0x400896d0: xQueueTakeMutexRecursive at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:783
+[0m
+[0;33m0x40085249: mutex_lock_wrapper at /home/kali/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:247
+[0m
+[0;33m0x40102241: wifi_api_lock at ??:?
+[0m
+[0;33m0x401188a3: ieee80211_timer_process at ??:?
+[0m
+[0;33m0x40121963: pp_timer_process at ??:?
+[0m
+[0;33m0x4011e9d9: lmac_stop_hw_txq at ??:?
+[0m
+[0;33m0x400d4bb5: timer_process_alarm at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:451
+[0m
+[0;33m0x400d4c01: timer_task at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:477 (discriminator 1)
+[0m
+[0;33m0x4008b6b9: vPortTaskWrapper at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400dda4b: task_wdt_timeout_handling at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x400ddbd2: task_wdt_isr at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x4008338d: _xt_lowint1 at /home/kali/esp/esp-idf/components/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x400dbd4f: touch_ll_meas_is_done at /home/kali/esp/esp-idf/components/hal/esp32/include/hal/touch_sensor_ll.h:500 (discriminator 1)
+ (inlined by) _touch_pad_read at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:366 (discriminator 1)
+[0m
+[0;33m0x400dbdc5: touch_pad_filter_cb at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:109
+[0m
+[0;33m0x400d4bb5: timer_process_alarm at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:451
+[0m
+[0;33m0x400d4c01: timer_task at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:477 (discriminator 1)
+[0m
+[0;33m0x4008b6b9: vPortTaskWrapper at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400dda4b: task_wdt_timeout_handling at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x400ddbd2: task_wdt_isr at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x4008338d: _xt_lowint1 at /home/kali/esp/esp-idf/components/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x400dbd52: touch_ll_meas_is_done at /home/kali/esp/esp-idf/components/hal/esp32/include/hal/touch_sensor_ll.h:500 (discriminator 1)
+ (inlined by) _touch_pad_read at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:366 (discriminator 1)
+[0m
+[0;33m0x400dbdc5: touch_pad_filter_cb at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:109
+[0m
+[0;33m0x400d4bb5: timer_process_alarm at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:451
+[0m
+[0;33m0x400d4c01: timer_task at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:477 (discriminator 1)
+[0m
+[0;33m0x4008b6b9: vPortTaskWrapper at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400dda4b: task_wdt_timeout_handling at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x400ddbd2: task_wdt_isr at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x4008338d: _xt_lowint1 at /home/kali/esp/esp-idf/components/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x400dbd4f: touch_ll_meas_is_done at /home/kali/esp/esp-idf/components/hal/esp32/include/hal/touch_sensor_ll.h:500 (discriminator 1)
+ (inlined by) _touch_pad_read at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:366 (discriminator 1)
+[0m
+[0;33m0x400dbdc5: touch_pad_filter_cb at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:109
+[0m
+[0;33m0x400d4bb5: timer_process_alarm at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:451
+[0m
+[0;33m0x400d4c01: timer_task at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:477 (discriminator 1)
+[0m
+[0;33m0x4008b6b9: vPortTaskWrapper at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400dda4b: task_wdt_timeout_handling at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x400ddbd2: task_wdt_isr at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x4008338d: _xt_lowint1 at /home/kali/esp/esp-idf/components/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x400dbd4f: touch_ll_meas_is_done at /home/kali/esp/esp-idf/components/hal/esp32/include/hal/touch_sensor_ll.h:500 (discriminator 1)
+ (inlined by) _touch_pad_read at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:366 (discriminator 1)
+[0m
+[0;33m0x400dbdc5: touch_pad_filter_cb at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:109
+[0m
+[0;33m0x400d4bb5: timer_process_alarm at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:451
+[0m
+[0;33m0x400d4c01: timer_task at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:477 (discriminator 1)
+[0m
+[0;33m0x4008b6b9: vPortTaskWrapper at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400dda4b: task_wdt_timeout_handling at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x400ddbd2: task_wdt_isr at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x4008338d: _xt_lowint1 at /home/kali/esp/esp-idf/components/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x400dbd4f: touch_ll_meas_is_done at /home/kali/esp/esp-idf/components/hal/esp32/include/hal/touch_sensor_ll.h:500 (discriminator 1)
+ (inlined by) _touch_pad_read at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:366 (discriminator 1)
+[0m
+[0;33m0x400dbdc5: touch_pad_filter_cb at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:109
+[0m
+[0;33m0x400d4bb5: timer_process_alarm at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:451
+[0m
+[0;33m0x400d4c01: timer_task at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:477 (discriminator 1)
+[0m
+[0;33m0x4008b6b9: vPortTaskWrapper at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400dda4b: task_wdt_timeout_handling at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x400ddbd2: task_wdt_isr at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x4008338d: _xt_lowint1 at /home/kali/esp/esp-idf/components/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x400dbd4f: touch_ll_meas_is_done at /home/kali/esp/esp-idf/components/hal/esp32/include/hal/touch_sensor_ll.h:500 (discriminator 1)
+ (inlined by) _touch_pad_read at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:366 (discriminator 1)
+[0m
+[0;33m0x400dbdc5: touch_pad_filter_cb at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:109
+[0m
+[0;33m0x400d4bb5: timer_process_alarm at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:451
+[0m
+[0;33m0x400d4c01: timer_task at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:477 (discriminator 1)
+[0m
+[0;33m0x4008b6b9: vPortTaskWrapper at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400dda4b: task_wdt_timeout_handling at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x400ddbd2: task_wdt_isr at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x4008338d: _xt_lowint1 at /home/kali/esp/esp-idf/components/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x400dbd4f: touch_ll_meas_is_done at /home/kali/esp/esp-idf/components/hal/esp32/include/hal/touch_sensor_ll.h:500 (discriminator 1)
+ (inlined by) _touch_pad_read at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:366 (discriminator 1)
+[0m
+[0;33m0x400dbdc5: touch_pad_filter_cb at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:109
+[0m
+[0;33m0x400d4bb5: timer_process_alarm at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:451
+[0m
+[0;33m0x400d4c01: timer_task at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:477 (discriminator 1)
+[0m
+[0;33m0x4008b6b9: vPortTaskWrapper at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400dda4b: task_wdt_timeout_handling at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x400ddbd2: task_wdt_isr at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x4008338d: _xt_lowint1 at /home/kali/esp/esp-idf/components/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x400dbd4f: touch_ll_meas_is_done at /home/kali/esp/esp-idf/components/hal/esp32/include/hal/touch_sensor_ll.h:500 (discriminator 1)
+ (inlined by) _touch_pad_read at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:366 (discriminator 1)
+[0m
+[0;33m0x400dbdc5: touch_pad_filter_cb at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:109
+[0m
+[0;33m0x400d4bb5: timer_process_alarm at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:451
+[0m
+[0;33m0x400d4c01: timer_task at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:477 (discriminator 1)
+[0m
+[0;33m0x4008b6b9: vPortTaskWrapper at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400dda4b: task_wdt_timeout_handling at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x400ddbd2: task_wdt_isr at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x4008338d: _xt_lowint1 at /home/kali/esp/esp-idf/components/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x400dbd4f: touch_ll_meas_is_done at /home/kali/esp/esp-idf/components/hal/esp32/include/hal/touch_sensor_ll.h:500 (discriminator 1)
+ (inlined by) _touch_pad_read at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:366 (discriminator 1)
+[0m
+[0;33m0x400dbdc5: touch_pad_filter_cb at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:109
+[0m
+[0;33m0x400d4bb5: timer_process_alarm at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:451
+[0m
+[0;33m0x400d4c01: timer_task at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:477 (discriminator 1)
+[0m
+[0;33m0x4008b6b9: vPortTaskWrapper at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400dda4b: task_wdt_timeout_handling at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x400ddbd2: task_wdt_isr at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x4008338d: _xt_lowint1 at /home/kali/esp/esp-idf/components/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x400dbd4f: touch_ll_meas_is_done at /home/kali/esp/esp-idf/components/hal/esp32/include/hal/touch_sensor_ll.h:500 (discriminator 1)
+ (inlined by) _touch_pad_read at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:366 (discriminator 1)
+[0m
+[0;33m0x400dbdc5: touch_pad_filter_cb at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:109
+[0m
+[0;33m0x400d4bb5: timer_process_alarm at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:451
+[0m
+[0;33m0x400d4c01: timer_task at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:477 (discriminator 1)
+[0m
+[0;33m0x4008b6b9: vPortTaskWrapper at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400dda4b: task_wdt_timeout_handling at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x400ddbd2: task_wdt_isr at /home/kali/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x4008338d: _xt_lowint1 at /home/kali/esp/esp-idf/components/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x400dbd4f: touch_ll_meas_is_done at /home/kali/esp/esp-idf/components/hal/esp32/include/hal/touch_sensor_ll.h:500 (discriminator 1)
+ (inlined by) _touch_pad_read at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:366 (discriminator 1)
+[0m
+[0;33m0x400dbdc5: touch_pad_filter_cb at /home/kali/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c:109
+[0m
+[0;33m0x400d4bb5: timer_process_alarm at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:451
+[0m
+[0;33m0x400d4c01: timer_task at /home/kali/esp/esp-idf/components/esp_timer/src/esp_timer.c:477 (discriminator 1)
+[0m
+[0;33m0x4008b6b9: vPortTaskWrapper at /home/kali/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0m

@@ -1,0 +1,376 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15672
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3884
+entry 0x40080650
+[0;32mI (33) boot: ESP-IDF v5.2-dev-1051-g17d6768e65 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jun 14 2023 18:35:03[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.0[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=206a0h (132768) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=000306c8 vaddr=3ffb0000 size=036b8h ( 14008) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00033d88 vaddr=40080000 size=0c290h ( 49808) load[0m
+[0;32mI (182) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=805f8h (525816) map[0m
+[0;32mI (372) esp_image: segment 4: paddr=000c0620 vaddr=4008c290 size=0934ch ( 37708) load[0m
+[0;32mI (399) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (399) boot: Disabling RNG early entropy source...[0m
+[0;32mI (411) cpu_start: Multicore app[0m
+[0;32mI (411) cpu_start: Pro cpu up.[0m
+[0;32mI (411) cpu_start: Starting app cpu, entry point is 0x400811e8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (429) cpu_start: Pro cpu start user code[0m
+[0;32mI (429) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (429) cpu_start: Application information:[0m
+[0;32mI (434) cpu_start: Project name:     simon[0m
+[0;32mI (439) cpu_start: App version:      1[0m
+[0;32mI (443) cpu_start: Compile time:     Jun 16 2023 13:57:58[0m
+[0;32mI (449) cpu_start: ELF file SHA256:  dc852d201...[0m
+[0;32mI (454) cpu_start: ESP-IDF:          v5.2-dev-1051-g17d6768e65-dirty[0m
+[0;32mI (461) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (466) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (471) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (476) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (483) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (489) heap_init: At 3FFB7780 len 00028880 (162 KiB): DRAM[0m
+[0;32mI (495) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (502) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (508) heap_init: At 400955DC len 0000AA24 (42 KiB): IRAM[0m
+[0;32mI (516) spi_flash: detected chip: generic[0m
+[0;32mI (519) spi_flash: flash io: dio[0m
+[0;33mW (523) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (537) app_start: Starting scheduler on CPU0[0m
+[0;32mI (541) app_start: Starting scheduler on CPU1[0m
+[0;32mI (541) main_task: Started on CPU0[0m
+[0;32mI (551) main_task: Calling app_main()[0m
+[0;32mI (581) wifi station: ESP_WIFI_MODE_STA[0m
+I (601) wifi:wifi driver task: 3ffbf778, prio:23, stack:6656, core=0
+I (611) wifi:wifi firmware version: 13c0fa6
+I (611) wifi:wifi certification version: v7.0
+I (611) wifi:config NVS flash: enabled
+I (611) wifi:config nano formating: disabled
+I (621) wifi:Init data frame dynamic rx buffer num: 32
+I (621) wifi:Init management frame dynamic rx buffer num: 32
+I (631) wifi:Init management short buffer num: 32
+I (631) wifi:Init dynamic tx buffer num: 32
+I (641) wifi:Init static rx buffer size: 1600
+I (641) wifi:Init static rx buffer num: 10
+I (641) wifi:Init dynamic rx buffer num: 32
+[0;32mI (651) wifi_init: rx ba win: 6[0m
+[0;32mI (651) wifi_init: tcpip mbox: 32[0m
+[0;32mI (661) wifi_init: udp mbox: 6[0m
+[0;32mI (661) wifi_init: tcp mbox: 6[0m
+[0;32mI (661) wifi_init: tcp tx win: 5744[0m
+[0;32mI (671) wifi_init: tcp rx win: 5744[0m
+[0;32mI (671) wifi_init: tcp mss: 1440[0m
+[0;32mI (681) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (681) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (691) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (801) wifi:mode : sta (e0:5a:1b:75:ce:78)
+I (801) wifi:enable tsf
+[0;32mI (801) wifi station: wifi_init_sta finished.[0m
+I (811) wifi:new:<4,1>, old:<1,0>, ap:<255,255>, sta:<4,1>, prof:1
+I (821) wifi:state: init -> auth (b0)
+I (821) wifi:state: auth -> init (8a0)
+I (821) wifi:new:<4,0>, old:<4,1>, ap:<255,255>, sta:<4,1>, prof:1
+[0;32mI (831) wifi station: retry to connect to the AP[0m
+[0;32mI (831) wifi station: connect to the AP fail[0m
+[0;32mI (3241) wifi station: retry to connect to the AP[0m
+[0;32mI (3241) wifi station: connect to the AP fail[0m
+I (3341) wifi:new:<4,1>, old:<4,0>, ap:<255,255>, sta:<4,1>, prof:1
+I (3341) wifi:state: init -> auth (b0)
+I (3341) wifi:state: auth -> assoc (0)
+I (3351) wifi:state: assoc -> run (10)
+I (3381) wifi:connected with Vargas, aid = 5, channel 4, 40U, bssid = 60:38:e0:93:7a:65
+I (3391) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (3391) wifi:pm start, type: 1
+
+I (3401) wifi:<ba-add>idx:0 (ifx:0, 60:38:e0:93:7a:65), tid:6, ssn:2, winSize:64
+I (3441) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4391) esp_netif_handlers: sta ip: 192.168.1.118, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4391) wifi station: got ip:192.168.1.118[0m
+[0;32mI (4391) wifi station: connected to ap SSID:Vargas password:Vargas_2022@[0m
+Touch Sensor filter mode read, the output format is: 
+Touchpad num:[raw data, filtered data]
+
+T0:[1432,1432] 
+[0;32mI (4411) main_task: Returned from app_main()[0m
+T0:[1432,1436] 
+T0:[1444,1443] 
+T0:[1444,1444] 
+T0:[1445,1443] 
+T0:[1444,1439] 
+T0:[1432,1437] 
+T0:[1444,1437] 
+T0:[1443,1441] 
+T0:[1444,1434] 
+T0:[1435,1441] 
+T0:[1433,1432] 
+T0:[1444,1443] 
+T0:[1443,1442] 
+T0:[1442,1442] 
+T0:[1442,1441] 
+T0:[1357,1404] 
+T0:[   0, 495] 
+T0:[   0, 151] 
+T0:[   0,  70] 
+T0:[   0,  51] 
+T0:[   1,  47] 
+T0:[   7,  54] 
+T0:[   4,  54] 
+T0:[   4,  49] 
+T0:[   2,  46] 
+T0:[   0,  42] 
+T0:[1444,1301] 
+T0:[1445,1444] 
+T0:[1446,1444] 
+T0:[1432,1441] 
+T0:[1439,1442] 
+T0:[1445,1444] 
+T0:[1444,1443] 
+T0:[1444,1443] 
+T0:[1442,1441] 
+T0:[1442,1440] 
+T0:[1443,1441] 
+T0:[1444,1443] 
+T0:[1439,1438] 
+T0:[1036,1151] 
+T0:[ 254, 531] 
+T0:[1059,1039] 
+T0:[ 344, 534] 
+T0:[ 522, 638] 
+T0:[ 283, 486] 
+T0:[ 329, 518] 
+T0:[ 453, 632] 
+T0:[ 401, 571] 
+T0:[ 276, 408] 
+T0:[ 290, 406] 
+T0:[ 339, 435] 
+T0:[1444,1436] 
+T0:[1435,1441] 
+T0:[1444,1443] 
+T0:[1444,1443] 
+T0:[1432,1432] 
+T0:[1444,1443] 
+T0:[1431,1432] 
+T0:[1443,1442] 
+T0:[1431,1432] 
+T0:[1444,1443] 
+T0:[1431,1433] 
+T0:[1444,1443] 
+T0:[1443,1442] 
+T0:[1444,1443] 
+T0:[1443,1442] 
+T0:[1442,1442] 
+T0:[1438,1433] 
+T0:[ 910, 922] 
+T0:[ 162, 293] 
+T0:[ 119, 190] 
+T0:[ 105, 211] 
+T0:[ 117, 194] 
+T0:[ 114, 179] 
+T0:[ 121, 180] 
+T0:[ 114, 181] 
+T0:[ 122, 191] 
+T0:[ 176, 248] 
+T0:[1434,1079] 
+T0:[1445,1443] 
+T0:[1437,1439] 
+T0:[ 226, 255] 
+T0:[ 363, 367] 
+T0:[ 350, 348] 
+T0:[1430,1157] 
+T0:[1439,1436] 
+T0:[ 568, 452] 
+T0:[ 749, 753] 
+T0:[ 654, 780] 
+T0:[ 738, 886] 
+T0:[ 603, 648] 
+T0:[ 506, 531] 
+T0:[ 429, 549] 
+T0:[ 422, 447] 
+T0:[ 625, 827] 
+T0:[1389,1380] 
+T0:[ 618, 588] 
+T0:[ 589, 599] 
+T0:[ 591, 585] 
+T0:[ 584, 580] 
+T0:[ 565, 563] 
+T0:[ 575, 570] 
+T0:[ 577, 568] 
+T0:[ 573, 565] 
+T0:[ 581, 551] 
+T0:[ 701, 631] 
+T0:[ 586, 662] 
+T0:[1444,1409] 
+T0:[ 566, 561] 
+T0:[ 541, 481] 
+T0:[1432,1428] 
+T0:[ 332, 280] 
+T0:[1431,1431] 
+T0:[1445,1238] 
+T0:[1046,1058] 
+T0:[ 721,1248] 
+T0:[1434,1392] 
+T0:[1160,1120] 
+T0:[1445,1437] 
+T0:[1433,1433] 
+T0:[1444,1444] 
+T0:[1432,1433] 
+T0:[1132,1354] 
+T0:[  41,  73] 
+T0:[  35,  61] 
+T0:[  36,  59] 
+T0:[1441,1261] 
+T0:[1439,1332] 
+T0:[ 159, 253] 
+T0:[  30,  55] 
+T0:[  28,  49] 
+T0:[  23,  45] 
+T0:[  20,  42] 
+T0:[  15,  38] 
+T0:[  13,  35] 
+T0:[  11,  34] 
+T0:[  11,  34] 
+T0:[  10,  33] 
+T0:[   9,  32] 
+T0:[   8,  32] 
+T0:[  35,  49] 
+T0:[1445,1419] 
+T0:[1445,1445] 
+T0:[1445,1445] 
+T0:[1445,1444] 
+T0:[1445,1443] 
+T0:[1445,1443] 
+T0:[1443,1442] 
+T0:[1444,1443] 
+T0:[ 207, 238] 
+T0:[ 185, 166] 
+T0:[ 179, 158] 
+T0:[ 184, 156] 
+T0:[ 184, 158] 
+T0:[1444, 902] 
+T0:[1445,1443] 
+T0:[1444,1443] 
+T0:[1444,1444] 
+T0:[1439,1443] 
+T0:[1445,1445] 
+T0:[1445,1444] 
+T0:[1444,1444] 
+T0:[1445,1444] 
+T0:[1444,1444] 
+T0:[1444,1443] 
+T0:[1441,1441] 
+T0:[1443,1443] 
+T0:[1443,1443] 
+T0:[1444,1444] 
+T0:[1443,1442] 
+T0:[1443,1443] 
+T0:[1441,1441] 
+T0:[1430,1434] 
+T0:[1441,1440] 
+T0:[1432,1436] 
+T0:[1445,1444] 
+T0:[1432,1438] 
+T0:[1443,1442] 
+T0:[1442,1441] 
+T0:[1443,1443] 
+T0:[1432,1440] 
+T0:[1443,1443] 
+T0:[1444,1443] 
+T0:[1445,1445] 
+T0:[1442,1442] 
+T0:[1427,1429] 
+T0:[1441,1441] 
+T0:[1430,1431] 
+T0:[1442,1442] 
+T0:[1431,1433] 
+T0:[1444,1444] 
+T0:[1444,1443] 
+T0:[1445,1444] 
+T0:[1444,1443] 
+T0:[1444,1444] 
+T0:[1444,1442] 
+T0:[1444,1439] 
+T0:[1444,1440] 
+T0:[ 251, 558] 
+T0:[ 192, 140] 
+T0:[ 204, 153] 
+T0:[ 199, 152] 
+T0:[ 201, 149] 
+T0:[1445,1388] 
+T0:[ 210, 202] 
+T0:[ 209, 157] 
+T0:[ 197, 154] 
+T0:[ 222, 162] 
+T0:[ 223, 163] 
+T0:[1445,1220] 
+T0:[1445,1444] 
+T0:[1444,1442] 
+T0:[ 176, 447] 
+T0:[  24,  47] 
+T0:[  25,  47] 
+T0:[  21,  41] 
+T0:[  19,  40] 
+T0:[1444,1367] 
+T0:[1444,1443] 
+T0:[1445,1445] 
+T0:[1445,1444] 
+T0:[1445,1445] 
+T0:[1438,1443] 
+T0:[1445,1445] 
+T0:[1445,1444] 
+T0:[1445,1444] 
+T0:[1444,1444] 
+T0:[1442,1443] 
+T0:[1441,1440] 
+T0:[1442,1441] 
+T0:[1441,1441] 
+T0:[1441,1441] 
+T0:[1441,1442] 
+T0:[1441,1441] 
+T0:[1441,1442] 
+T0:[1441,1441] 
+T0:[1429,1433] 
+T0:[1441,1441] 
+T0:[1429,1434] 
+T0:[1442,1441] 
+T0:[1430,1436] 
+T0:[1441,1440] 
+T0:[1441,1439] 
+T0:[1441,1442] 
+T0:[1431,1439] 
+T0:[1441,1442] 
+T0:[1441,1441] 
+T0:[1442,1442] 
+T0:[1442,1442] 
+T0:[1429,1431] 
+T0:[1441,1441] 
+T0:[1429,1431] 
+T0:[1442,1441] 
+T0:[1428,1431] 
+T0:[1441,1441] 
+T0:[1441,1441] 
+T0:[1441,1442] 
+T0:[1441,1441] 
+T0:[1442,1442] 
+T0:[1441,1441] 
+T0:[1441,1442] 
+T0:[1443,1441] 

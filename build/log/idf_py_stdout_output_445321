@@ -1,0 +1,291 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15672
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3884
+entry 0x40080650
+[0;32mI (33) boot: ESP-IDF v5.2-dev-1051-g17d6768e65 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jun 14 2023 18:35:03[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.0[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=262b0h (156336) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=000362d8 vaddr=3ffb0000 size=03718h ( 14104) load[0m
+[0;32mI (170) esp_image: segment 2: paddr=000399f8 vaddr=40080000 size=06620h ( 26144) load[0m
+[0;32mI (181) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=97e68h (622184) map[0m
+[0;32mI (406) esp_image: segment 4: paddr=000d7e90 vaddr=40086620 size=0efbch ( 61372) load[0m
+[0;32mI (442) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (443) boot: Disabling RNG early entropy source...[0m
+[0;32mI (454) cpu_start: Multicore app[0m
+[0;32mI (454) cpu_start: Pro cpu up.[0m
+[0;32mI (455) cpu_start: Starting app cpu, entry point is 0x400811e8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (472) cpu_start: Pro cpu start user code[0m
+[0;32mI (472) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (472) cpu_start: Application information:[0m
+[0;32mI (477) cpu_start: Project name:     simon[0m
+[0;32mI (482) cpu_start: App version:      1[0m
+[0;32mI (486) cpu_start: Compile time:     Jun 16 2023 13:57:58[0m
+[0;32mI (492) cpu_start: ELF file SHA256:  42b1454c4...[0m
+[0;32mI (498) cpu_start: ESP-IDF:          v5.2-dev-1051-g17d6768e65-dirty[0m
+[0;32mI (505) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (510) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (514) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (519) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (526) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (532) heap_init: At 3FFB7DC8 len 00028238 (160 KiB): DRAM[0m
+[0;32mI (539) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (545) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (551) heap_init: At 400955DC len 0000AA24 (42 KiB): IRAM[0m
+[0;32mI (559) spi_flash: detected chip: generic[0m
+[0;32mI (562) spi_flash: flash io: dio[0m
+[0;33mW (566) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (580) app_start: Starting scheduler on CPU0[0m
+[0;32mI (584) app_start: Starting scheduler on CPU1[0m
+[0;32mI (584) main_task: Started on CPU0[0m
+[0;32mI (594) main_task: Calling app_main()[0m
+[0;32mI (624) wifi station: ESP_WIFI_MODE_STA[0m
+I (644) wifi:wifi driver task: 3ffbfdc0, prio:23, stack:6656, core=0
+I (654) wifi:wifi firmware version: 13c0fa6
+I (654) wifi:wifi certification version: v7.0
+I (654) wifi:config NVS flash: enabled
+I (654) wifi:config nano formating: disabled
+I (664) wifi:Init data frame dynamic rx buffer num: 32
+I (664) wifi:Init management frame dynamic rx buffer num: 32
+I (674) wifi:Init management short buffer num: 32
+I (674) wifi:Init dynamic tx buffer num: 32
+I (684) wifi:Init static rx buffer size: 1600
+I (684) wifi:Init static rx buffer num: 10
+I (684) wifi:Init dynamic rx buffer num: 32
+[0;32mI (694) wifi_init: rx ba win: 6[0m
+[0;32mI (694) wifi_init: tcpip mbox: 32[0m
+[0;32mI (704) wifi_init: udp mbox: 6[0m
+[0;32mI (704) wifi_init: tcp mbox: 6[0m
+[0;32mI (704) wifi_init: tcp tx win: 5744[0m
+[0;32mI (714) wifi_init: tcp rx win: 5744[0m
+[0;32mI (714) wifi_init: tcp mss: 1440[0m
+[0;32mI (724) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (724) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (734) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (844) wifi:mode : sta (e0:5a:1b:75:ce:78)
+I (844) wifi:enable tsf
+[0;32mI (844) wifi station: wifi_init_sta finished.[0m
+I (864) wifi:new:<4,1>, old:<1,0>, ap:<255,255>, sta:<4,1>, prof:1
+I (864) wifi:state: init -> auth (b0)
+I (864) wifi:state: auth -> init (8a0)
+I (864) wifi:new:<4,0>, old:<4,1>, ap:<255,255>, sta:<4,1>, prof:1
+[0;32mI (874) wifi station: retry to connect to the AP[0m
+[0;32mI (874) wifi station: connect to the AP fail[0m
+[0;32mI (3284) wifi station: retry to connect to the AP[0m
+[0;32mI (3284) wifi station: connect to the AP fail[0m
+I (3294) wifi:new:<4,1>, old:<4,0>, ap:<255,255>, sta:<4,1>, prof:1
+I (3294) wifi:state: init -> auth (b0)
+I (3294) wifi:state: auth -> assoc (0)
+I (3304) wifi:state: assoc -> run (10)
+I (3334) wifi:connected with Vargas, aid = 1, channel 4, 40U, bssid = 60:38:e0:93:7a:65
+I (3334) wifi:security: WPA2-PSK, phy: bgn, rssi: -44
+I (3344) wifi:pm start, type: 1
+
+I (3344) wifi:<ba-add>idx:0 (ifx:0, 60:38:e0:93:7a:65), tid:6, ssn:2, winSize:64
+I (3384) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4344) esp_netif_handlers: sta ip: 192.168.1.118, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4344) wifi station: got ip:192.168.1.118[0m
+[0;32mI (4344) wifi station: connected to ap SSID:Vargas password:Vargas_2022@[0m
+Touch Sensor filter mode read, the output format is: 
+Touchpad num:[raw data, filtered data]
+
+T0:[1440hu,1440hu] T1:[   0hu,   0hu] 
+[0;32mI (4364) MQTTS_SIMON: [APP] Freestatic memory: 230156 bytes[0m
+[0;32mI (4384) MQTTS_SIMON: Other event id:7[0m
+[0;32mI (4384) main_task: Returned from app_main()[0m
+[0;31mE (4394) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (4394) esp-tls: Failed to open new connection[0m
+[0;31mE (4394) transport_base: Failed to open a new connection[0m
+[0;31mE (4404) mqtt_client: Error transport connect[0m
+[0;32mI (4404) MQTTS_SIMON: MQTT_EVENT_ERROR[0m
+[0;32mI (4414) MQTTS_SIMON: Last error code reported from esp-tls: 0x8004[0m
+[0;32mI (4414) MQTTS_SIMON: Last tls stack error number: 0x0[0m
+[0;32mI (4424) MQTTS_SIMON: Last captured errno : 104 (Connection reset by peer)[0m
+[0;32mI (4434) MQTTS_SIMON: MQTT_EVENT_DISCONNECTED[0m
+T0:[1439hu,1442hu] T1:[   0hu,   0hu] 
+T0:[1451hu,1446hu] T1:[   0hu,   0hu] 
+T0:[1439hu,1444hu] T1:[   0hu,   0hu] 
+T0:[1451hu,1451hu] T1:[   0hu,   0hu] 
+T0:[1441hu,1445hu] T1:[   0hu,   0hu] 
+T0:[1452hu,1451hu] T1:[   0hu,   0hu] 
+T0:[1440hu,1445hu] T1:[   0hu,   0hu] 
+T0:[1443hu,1447hu] T1:[   0hu,   0hu] 
+T0:[1451hu,1449hu] T1:[   0hu,   0hu] 
+T0:[1452hu,1443hu] T1:[   0hu,   0hu] 
+T0:[1442hu,1449hu] T1:[   0hu,   0hu] 
+T0:[1452hu,1451hu] T1:[   0hu,   0hu] 
+T0:[1452hu,1451hu] T1:[   0hu,   0hu] 
+T0:[1439hu,1440hu] T1:[   0hu,   0hu] 
+T0:[1449hu,1450hu] T1:[   0hu,   0hu] 
+T0:[1439hu,1441hu] T1:[   0hu,   0hu] 
+T0:[1451hu,1449hu] T1:[   0hu,   0hu] 
+T0:[1439hu,1441hu] T1:[   0hu,   0hu] 
+T0:[1449hu,1450hu] T1:[   0hu,   0hu] 
+T0:[1438hu,1440hu] T1:[   0hu,   0hu] 
+T0:[1439hu,1441hu] T1:[   0hu,   0hu] 
+T0:[1450hu,1449hu] T1:[   0hu,   0hu] 
+T0:[1450hu,1448hu] T1:[   0hu,   0hu] 
+T0:[1271hu,1338hu] T1:[   0hu,   0hu] 
+T0:[ 794hu, 645hu] T1:[   0hu,   0hu] 
+T0:[ 583hu, 412hu] T1:[   0hu,   0hu] 
+T0:[ 463hu, 320hu] T1:[   0hu,   0hu] 
+T0:[ 406hu, 276hu] T1:[   0hu,   0hu] 
+T0:[ 384hu, 262hu] T1:[   0hu,   0hu] 
+T0:[ 361hu, 256hu] T1:[   0hu,   0hu] 
+T0:[ 341hu, 246hu] T1:[   0hu,   0hu] 
+T0:[ 312hu, 242hu] T1:[   0hu,   0hu] 
+T0:[ 283hu, 236hu] T1:[   0hu,   0hu] 
+T0:[ 261hu, 230hu] T1:[   0hu,   0hu] 
+T0:[ 264hu, 239hu] T1:[   0hu,   0hu] 
+T0:[ 236hu, 234hu] T1:[   0hu,   0hu] 
+T0:[ 219hu, 234hu] T1:[   0hu,   0hu] 
+T0:[ 195hu, 232hu] T1:[   0hu,   0hu] 
+T0:[ 182hu, 243hu] T1:[   0hu,   0hu] 
+T0:[ 166hu, 244hu] T1:[   0hu,   0hu] 
+T0:[ 153hu, 242hu] T1:[   0hu,   0hu] 
+T0:[1452hu,1379hu] T1:[   0hu,   0hu] 
+T0:[1452hu,1451hu] T1:[   0hu,   0hu] 
+T0:[ 735hu,1019hu] T1:[   0hu,   0hu] 
+T0:[ 538hu, 620hu] T1:[   0hu,   0hu] 
+T0:[ 327hu, 503hu] T1:[   0hu,   0hu] 
+T0:[ 387hu, 527hu] T1:[   0hu,   0hu] 
+T0:[ 701hu, 727hu] T1:[   0hu,   0hu] 
+T0:[ 619hu, 824hu] T1:[   0hu,   0hu] 
+T0:[ 525hu, 772hu] T1:[   0hu,   0hu] 
+T0:[ 494hu, 747hu] T1:[   0hu,   0hu] 
+T0:[ 369hu, 676hu] T1:[   0hu,   0hu] 
+T0:[ 275hu, 623hu] T1:[   0hu,   0hu] 
+T0:[ 189hu, 566hu] T1:[   0hu,   0hu] 
+T0:[ 140hu, 515hu] T1:[   0hu,   0hu] 
+T0:[  99hu, 480hu] T1:[   0hu,   0hu] 
+T0:[  65hu, 450hu] T1:[   0hu,   0hu] 
+T0:[  45hu, 431hu] T1:[   0hu,   0hu] 
+T0:[  25hu, 415hu] T1:[   0hu,   0hu] 
+T0:[  13hu, 403hu] T1:[   0hu,   0hu] 
+T0:[  19hu, 403hu] T1:[   0hu,   0hu] 
+T0:[  61hu, 464hu] T1:[   0hu,   0hu] 
+T0:[1439hu,1428hu] T1:[   0hu,   0hu] 
+T0:[ 218hu, 447hu] T1:[   0hu,   0hu] 
+T0:[ 204hu, 341hu] T1:[   0hu,   0hu] 
+T0:[ 229hu, 337hu] T1:[   0hu,   0hu] 
+T0:[ 254hu, 334hu] T1:[   0hu,   0hu] 
+T0:[ 282hu, 333hu] T1:[   0hu,   0hu] 
+T0:[1441hu,1423hu] T1:[   0hu,   0hu] 
+T0:[1452hu,1451hu] T1:[   0hu,   0hu] 
+T0:[ 411hu, 405hu] T1:[   0hu,   0hu] 
+T0:[ 368hu, 325hu] T1:[   0hu,   0hu] 
+T0:[ 337hu, 319hu] T1:[   0hu,   0hu] 
+T0:[ 318hu, 290hu] T1:[   0hu,   0hu] 
+T0:[1432hu, 841hu] T1:[   0hu,   0hu] 
+[0;32mI (19434) MQTTS_SIMON: Other event id:7[0m
+[0;31mE (19434) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (19434) esp-tls: Failed to open new connection[0m
+[0;31mE (19444) transport_base: Failed to open a new connection[0m
+[0;31mE (19444) mqtt_client: Error transport connect[0m
+[0;32mI (19454) MQTTS_SIMON: MQTT_EVENT_ERROR[0m
+[0;32mI (19454) MQTTS_SIMON: Last error code reported from esp-tls: 0x8004[0m
+[0;32mI (19464) MQTTS_SIMON: Last tls stack error number: 0x0[0m
+[0;32mI (19464) MQTTS_SIMON: Last captured errno : 104 (Connection reset by peer)[0m
+[0;32mI (19474) MQTTS_SIMON: MQTT_EVENT_DISCONNECTED[0m
+T0:[1021hu,1259hu] T1:[   0hu,   0hu] 
+T0:[ 611hu, 494hu] T1:[   0hu,   0hu] 
+T0:[1431hu,1115hu] T1:[   0hu,   0hu] 
+T0:[1452hu,1451hu] T1:[   0hu,   0hu] 
+T0:[1439hu,1440hu] T1:[   0hu,   0hu] 
+T0:[1452hu,1452hu] T1:[   0hu,   0hu] 
+T0:[1438hu,1440hu] T1:[   0hu,   0hu] 
+T0:[1453hu,1452hu] T1:[   0hu,   0hu] 
+T0:[1434hu,1439hu] T1:[   0hu,   0hu] 
+T0:[1453hu,1450hu] T1:[   0hu,   0hu] 
+T0:[1453hu,1452hu] T1:[   0hu,   0hu] 
+T0:[1453hu,1449hu] T1:[   0hu,   0hu] 
+T0:[1453hu,1451hu] T1:[   0hu,   0hu] 
+T0:[1452hu,1448hu] T1:[   0hu,   0hu] 
+T0:[1452hu,1450hu] T1:[   0hu,   0hu] 
+T0:[1454hu,1448hu] T1:[   0hu,   0hu] 
+T0:[1453hu,1450hu] T1:[   0hu,   0hu] 
+T0:[1451hu,1444hu] T1:[   0hu,   0hu] 
+T0:[1452hu,1449hu] T1:[   0hu,   0hu] 
+T0:[1451hu,1442hu] T1:[   0hu,   0hu] 
+T0:[1439hu,1447hu] T1:[   0hu,   0hu] 
+T0:[1440hu,1440hu] T1:[   0hu,   0hu] 
+T0:[1439hu,1439hu] T1:[   0hu,   0hu] 
+T0:[1439hu,1439hu] T1:[   0hu,   0hu] 
+T0:[1438hu,1439hu] T1:[   0hu,   0hu] 
+T0:[1451hu,1450hu] T1:[   0hu,   0hu] 
+T0:[1451hu,1449hu] T1:[   0hu,   0hu] 
+T0:[1451hu,1450hu] T1:[   0hu,   0hu] 
+T0:[1451hu,1449hu] T1:[   0hu,   0hu] 
+T0:[1450hu,1450hu] T1:[   0hu,   0hu] 
+T0:[1450hu,1448hu] T1:[   0hu,   0hu] 
+T0:[1450hu,1450hu] T1:[   0hu,   0hu] 
+T0:[1449hu,1447hu] T1:[   0hu,   0hu] 
+T0:[1450hu,1449hu] T1:[   0hu,   0hu] 
+T0:[1450hu,1446hu] T1:[   0hu,   0hu] 
+T0:[1450hu,1444hu] T1:[   0hu,   0hu] 
+T0:[1450hu,1444hu] T1:[   0hu,   0hu] 
+T0:[1449hu,1443hu] T1:[   0hu,   0hu] 
+T0:[1436hu,1443hu] T1:[   0hu,   0hu] 
+T0:[1450hu,1448hu] T1:[   0hu,   0hu] 
+T0:[1438hu,1447hu] T1:[   0hu,   0hu] 
+T0:[1443hu,1447hu] T1:[   0hu,   0hu] 
+T0:[1450hu,1450hu] T1:[   0hu,   0hu] 
+T0:[1450hu,1449hu] T1:[   0hu,   0hu] 
+T0:[1449hu,1449hu] T1:[   0hu,   0hu] 
+T0:[1449hu,1449hu] T1:[   0hu,   0hu] 
+T0:[1449hu,1449hu] T1:[   0hu,   0hu] 
+T0:[1449hu,1448hu] T1:[   0hu,   0hu] 
+T0:[1449hu,1448hu] T1:[   0hu,   0hu] 
+T0:[1449hu,1447hu] T1:[   0hu,   0hu] 
+[0;32mI (29484) MQTTS_SIMON: Other event id:7[0m
+[0;31mE (29484) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (29484) esp-tls: Failed to open new connection[0m
+[0;31mE (29494) transport_base: Failed to open a new connection[0m
+[0;31mE (29494) mqtt_client: Error transport connect[0m
+[0;32mI (29504) MQTTS_SIMON: MQTT_EVENT_ERROR[0m
+[0;32mI (29504) MQTTS_SIMON: Last error code reported from esp-tls: 0x8004[0m
+[0;32mI (29514) MQTTS_SIMON: Last tls stack error number: 0x0[0m
+[0;32mI (29514) MQTTS_SIMON: Last captured errno : 104 (Connection reset by peer)[0m
+[0;32mI (29524) MQTTS_SIMON: MQTT_EVENT_DISCONNECTED[0m
+T0:[1449hu,1445hu] T1:[   0hu,   0hu] 
+T0:[1434hu,1437hu] T1:[   0hu,   0hu] 
+T0:[1449hu,1449hu] T1:[   0hu,   0hu] 
+T0:[1436hu,1440hu] T1:[   0hu,   0hu] 
+T0:[1448hu,1448hu] T1:[   0hu,   0hu] 
+T0:[1436hu,1441hu] T1:[   0hu,   0hu] 
+T0:[1449hu,1448hu] T1:[   0hu,   0hu] 
+T0:[1437hu,1443hu] T1:[   0hu,   0hu] 
+T0:[1449hu,1448hu] T1:[   0hu,   0hu] 
+T0:[1437hu,1444hu] T1:[   0hu,   0hu] 
+T0:[1439hu,1444hu] T1:[   0hu,   0hu] 
+T0:[1433hu,1445hu] T1:[   0hu,   0hu] 
+T0:[1437hu,1446hu] T1:[   0hu,   0hu] 
+T0:[1439hu,1446hu] T1:[   0hu,   0hu] 
+T0:[1436hu,1437hu] T1:[   0hu,   0hu] 
+T0:[1448hu,1449hu] T1:[   0hu,   0hu] 
+T0:[1433hu,1435hu] T1:[   0hu,   0hu] 
+T0:[1449hu,1449hu] T1:[   0hu,   0hu] 
+T0:[1449hu,1447hu] T1:[   0hu,   0hu] 
+T0:[1448hu,1447hu] T1:[   0hu,   0hu] 
+T0:[1436hu,1438hu] T1:[   0hu,   0hu] 

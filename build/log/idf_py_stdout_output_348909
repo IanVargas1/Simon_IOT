@@ -1,0 +1,17 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/kali/esp/touch_sensor/build/bootloader/esp-idf/esptool_py && /root/.espressif/python_env/idf5.2_py3.11_env/bin/python /home/kali/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/kali/esp/touch_sensor/build/bootloader/bootloader.bin
+Bootloader binary size 0x68a0 bytes. 0x760 bytes (7%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/mqtt_simon/CMakeFiles/__idf_mqtt_simon.dir/mqtt_simon_client.c.obj
+[5/9] Linking C static library esp-idf/mqtt_simon/libmqtt_simon.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable simon.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.6.2
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated /home/kali/esp/touch_sensor/build/simon.bin
+[9/9] cd /home/kali/esp/touch_sensor/build/esp-idf/esptool_py && /root/.espressif/python_env/idf5.2_py3.11_env/bin/python /home/kali/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/kali/esp/touch_sensor/build/partition_table/partition-table.bin /home/kali/esp/touch_sensor/build/simon.bin
+simon.bin binary size 0xd6e40 bytes. Smallest app partition is 0x100000 bytes. 0x291c0 bytes (16%) free.

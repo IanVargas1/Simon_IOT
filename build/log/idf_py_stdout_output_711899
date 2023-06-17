@@ -1,0 +1,75 @@
+[1/5] cd /home/kali/esp/touch_sensor/build/esp-idf/esptool_py && /root/.espressif/python_env/idf5.2_py3.11_env/bin/python /home/kali/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/kali/esp/touch_sensor/build/partition_table/partition-table.bin /home/kali/esp/touch_sensor/build/simon.bin
+simon.bin binary size 0xd87e0 bytes. Smallest app partition is 0x100000 bytes. 0x27820 bytes (15%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/kali/esp/touch_sensor/build/bootloader/esp-idf/esptool_py && /root/.espressif/python_env/idf5.2_py3.11_env/bin/python /home/kali/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/kali/esp/touch_sensor/build/bootloader/bootloader.bin
+Bootloader binary size 0x68a0 bytes. 0x760 bytes (7%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/kali/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/kali/esp/esp-idf -D "SERIAL_TOOL=/root/.espressif/python_env/idf5.2_py3.11_env/bin/python;;/home/kali/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/kali/esp/touch_sensor/build -P /home/kali/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 simon.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.6.2
+Serial port /dev/ttyUSB0
+Connecting......
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: e0:5a:1b:75:ce:78
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000e8fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26784 bytes to 16821...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000767c... (100 %)
+Wrote 26784 bytes (16821 compressed) at 0x00001000 in 0.9 seconds (effective 250.7 kbit/s)...
+Hash of data verified.
+Compressed 886752 bytes to 567658...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001bb54... (5 %)
+Writing at 0x00023f33... (8 %)
+Writing at 0x00029807... (11 %)
+Writing at 0x00034340... (14 %)
+Writing at 0x0003d5a5... (17 %)
+Writing at 0x00043225... (20 %)
+Writing at 0x000489f8... (22 %)
+Writing at 0x0004e859... (25 %)
+Writing at 0x0005433c... (28 %)
+Writing at 0x00059dbf... (31 %)
+Writing at 0x0005f8ad... (34 %)
+Writing at 0x000658ca... (37 %)
+Writing at 0x0006b429... (40 %)
+Writing at 0x00070d17... (42 %)
+Writing at 0x000761cc... (45 %)
+Writing at 0x0007b4c2... (48 %)
+Writing at 0x00080a42... (51 %)
+Writing at 0x00085d73... (54 %)
+Writing at 0x0008b3d3... (57 %)
+Writing at 0x00090be5... (60 %)
+Writing at 0x00096ad0... (62 %)
+Writing at 0x0009c223... (65 %)
+Writing at 0x000a175b... (68 %)
+Writing at 0x000a6fb6... (71 %)
+Writing at 0x000ac96b... (74 %)
+Writing at 0x000b200d... (77 %)
+Writing at 0x000b79fc... (80 %)
+Writing at 0x000bd3e3... (82 %)
+Writing at 0x000c2afc... (85 %)
+Writing at 0x000cb633... (88 %)
+Writing at 0x000d3f4c... (91 %)
+Writing at 0x000d9e7a... (94 %)
+Writing at 0x000df803... (97 %)
+Writing at 0x000e4dae... (100 %)
+Wrote 886752 bytes (567658 compressed) at 0x00010000 in 12.9 seconds (effective 549.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 339.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
