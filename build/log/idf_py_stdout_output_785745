@@ -1,0 +1,223 @@
+ wifi:new:<4,1>, old:<1,0>, ap:<255,255>, sta:<4,1>, prof:1
+I (868) wifi:state: init -> auth (b0)
+I (868) wifi:sta�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15672
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3884
+entry 0x40080650
+[0;32mI (33) boot: ESP-IDF v5.2-dev-1051-g17d6768e65 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jun 14 2023 18:35:03[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.0[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26b00h (158464) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=00036b28 vaddr=3ffb0000 size=03760h ( 14176) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=0003a290 vaddr=40080000 size=05d88h ( 23944) load[0m
+[0;32mI (181) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=99330h (627504) map[0m
+[0;32mI (408) esp_image: segment 4: paddr=000d9358 vaddr=40085d88 size=0f854h ( 63572) load[0m
+[0;32mI (445) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (445) boot: Disabling RNG early entropy source...[0m
+[0;32mI (457) cpu_start: Multicore app[0m
+[0;32mI (457) cpu_start: Pro cpu up.[0m
+[0;32mI (457) cpu_start: Starting app cpu, entry point is 0x400811e8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (475) cpu_start: Pro cpu start user code[0m
+[0;32mI (475) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (475) cpu_start: Application information:[0m
+[0;32mI (480) cpu_start: Project name:     simon[0m
+[0;32mI (485) cpu_start: App version:      27e921b-dirty[0m
+[0;32mI (490) cpu_start: Compile time:     Jun 17 2023 12:33:31[0m
+[0;32mI (496) cpu_start: ELF file SHA256:  d0913ec50...[0m
+[0;32mI (502) cpu_start: ESP-IDF:          v5.2-dev-1051-g17d6768e65-dirty[0m
+[0;32mI (509) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (513) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (518) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (523) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (530) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFB7E18 len 000281E8 (160 KiB): DRAM[0m
+[0;32mI (542) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (555) heap_init: At 400955DC len 0000AA24 (42 KiB): IRAM[0m
+[0;32mI (563) spi_flash: detected chip: generic[0m
+[0;32mI (566) spi_flash: flash io: dio[0m
+[0;33mW (570) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (584) app_start: Starting scheduler on CPU0[0m
+[0;32mI (588) app_start: Starting scheduler on CPU1[0m
+[0;32mI (588) main_task: Started on CPU0[0m
+[0;32mI (598) main_task: Calling app_main()[0m
+[0;32mI (628) wifi station: ESP_WIFI_MODE_STA[0m
+I (648) wifi:wifi driver task: 3ffbfe10, prio:23, stack:6656, core=0
+I (658) wifi:wifi firmware version: 13c0fa6
+I (658) wifi:wifi certification version: v7.0
+I (658) wifi:config NVS flash: enabled
+I (658) wifi:config nano formating: disabled
+I (668) wifi:Init data frame dynamic rx buffer num: 32
+I (668) wifi:Init management frame dynamic rx buffer num: 32
+I (678) wifi:Init management short buffer num: 32
+I (678) wifi:Init dynamic tx buffer num: 32
+I (688) wifi:Init static rx buffer size: 1600
+I (688) wifi:Init static rx buffer num: 10
+I (688) wifi:Init dynamic rx buffer num: 32
+[0;32mI (698) wifi_init: rx ba win: 6[0m
+[0;32mI (698) wifi_init: tcpip mbox: 32[0m
+[0;32mI (708) wifi_init: udp mbox: 6[0m
+[0;32mI (708) wifi_init: tcp mbox: 6[0m
+[0;32mI (708) wifi_init: tcp tx win: 5744[0m
+[0;32mI (718) wifi_init: tcp rx win: 5744[0m
+[0;32mI (718) wifi_init: tcp mss: 1440[0m
+[0;32mI (728) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (728) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (738) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (848) wifi:mode : sta (e0:5a:1b:75:ce:78)
+I (848) wifi:enable tsf
+[0;32mI (848) wifi station: wifi_init_sta finished.[0m
+I (858) wifi:new:<4,1>, old:<1,0>, ap:<255,255>, sta:<4,1>, prof:1
+I (868) wifi:state: init -> auth (b0)
+I (868) wifi:state: auth -> init (8a0)
+I (868) wifi:new:<4,0>, old:<4,1>, ap:<255,255>, sta:<4,1>, prof:1
+[0;32mI (878) wifi station: retry to connect to the AP[0m
+[0;32mI (878) wifi station: connect to the AP fail[0m
+[0;32mI (3288) wifi station: retry to connect to the AP[0m
+[0;32mI (3288) wifi station: connect to the AP fail[0m
+I (3298) wifi:new:<4,1>, old:<4,0>, ap:<255,255>, sta:<4,1>, prof:1
+I (3298) wifi:state: init -> auth (b0)
+I (3298) wifi:state: auth -> assoc (0)
+I (3308) wifi:state: assoc -> run (10)
+I (3338) wifi:connected with Vargas, aid = 3, channel 4, 40U, bssid = 60:38:e0:93:7a:65
+I (3348) wifi:security: WPA2-PSK, phy: bgn, rssi: -62
+I (3348) wifi:pm start, type: 1
+
+I (3358) wifi:<ba-add>idx:0 (ifx:0, 60:38:e0:93:7a:65), tid:6, ssn:2, winSize:64
+I (3398) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4348) esp_netif_handlers: sta ip: 192.168.1.118, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4348) wifi station: got ip:192.168.1.118[0m
+[0;32mI (4348) wifi station: connected to ap SSID:Vargas password:Vargas_2022@[0m
+Touch Sensor filter mode read, the output format is: 
+Touchpad num:[raw data, filtered data]
+
+T0:[1437,1437] 
+[0;32mI (4368) MQTTS_SIMON: [APP] Freestatic memory: 220880 bytes[0m
+[0;32mI (4378) MQTTS_SIMON: Other event id:7[0m
+[0;32mI (4388) main_task: Returned from app_main()[0m
+[0;32mI (4388) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+T0:[1447,1446] 
+T0:[1447,1443] 
+T0:[1446,1443] 
+T0:[1434,1433] 
+T0:[1447,1445] 
+T0:[1423,1436] 
+T0:[1433,1431] 
+T0:[1422,1423] 
+T0:[1433,1442] 
+T0:[1446,1446] 
+T0:[1447,1447] 
+[0;32mI (6588) MQTTS_SIMON: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6588) MQTTS_SIMON: sent subscribe successful, msg_id=34511[0m
+T0:[1447,1446] 
+[0;32mI (6788) MQTTS_SIMON: MQTT_EVENT_SUBSCRIBED, msg_id=34511[0m
+T0:[1447,1441] 
+T0:[1448,1448] 
+T0:[1447,1446] 
+T0:[1447,1447] 
+T0:[1447,1445] 
+T0:[1447,1448] 
+T0:[1446,1445] 
+T0:[1447,1448] 
+T0:[1446,1445] 
+T0:[1448,1447] 
+T0:[1447,1444] 
+T0:[1447,1447] 
+T0:[1448,1448] 
+T0:[1447,1447] 
+T0:[1435,1443] 
+T0:[1448,1446] 
+T0:[1437,1445] 
+T0:[1441,1446] 
+T0:[1447,1448] 
+T0:[1447,1447] 
+T0:[1448,1448] 
+T0:[1447,1447] 
+T0:[1448,1448] 
+T0:[1447,1447] 
+T0:[1447,1447] 
+T0:[1447,1448] 
+T0:[1448,1447] 
+T0:[1448,1448] 
+T0:[1448,1448] 
+T0:[1433,1437] 
+T0:[1448,1448] 
+T0:[1435,1440] 
+T0:[1448,1447] 
+T0:[1436,1441] 
+[0;32mI (13648) MQTTS_SIMON: MQTT_EVENT_DATA[0m
+TOPIC=simon/secuencia
+DATA=9
+T0:[1446,1442] 
+T0:[1446,1441] 
+T0:[1445,1446] 
+T0:[1448,1446] 
+T0:[1448,1449] 
+T0:[1437,1445] 
+T0:[1447,1447] 
+T0:[1446,1447] 
+T0:[1437,1437] 
+T0:[1447,1448] 
+T0:[1434,1435] 
+T0:[1447,1446] 
+T0:[1434,1436] 
+T0:[1447,1448] 
+T0:[1435,1438] 
+T0:[1445,1445] 
+T0:[1434,1437] 
+T0:[1445,1446] 
+T0:[1447,1445] 
+T0:[1447,1448] 
+T0:[1446,1444] 
+T0:[1446,1442] 
+T0:[1433,1439] 
+T0:[1447,1447] 
+T0:[1447,1446] 
+T0:[1447,1438] 
+T0:[1436,1444] 
+T0:[1434,1435] 
+T0:[1447,1448] 
+T0:[1447,1448] 
+T0:[1446,1446] 
+T0:[1445,1445] 
+T0:[1446,1447] 
+T0:[1448,1448] 
+T0:[1447,1446] 
+T0:[1446,1446] 
+T0:[1446,1444] 
+T0:[1446,1446] 
+T0:[1447,1445] 
+T0:[1448,1448] 
+T0:[1446,1442] 
+T0:[1446,1445] 
+T0:[1446,1446] 
+T0:[1448,1447] 
+T0:[1447,1448] 
+[0;32mI (22698) MQTTS_SIMON: SENDING MQTT MSG 
+ topic: (simon/resp)
+ msg: (9)[0m
+T0:[1435,1437] 
+[0;32mI (22868) MQTTS_SIMON: MQTT_EVENT_PUBLISHED, msg_id=38872[0m
+T0:[1435,1438] 
+T0:[1449,1448] 

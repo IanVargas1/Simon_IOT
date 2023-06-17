@@ -35,6 +35,7 @@ const char *TAG = "MQTTS_SIMON";
 
 QueueHandle_t queue_mqtt;
 esp_mqtt_client_handle_t client;
+
 /*
  * @brief Event handler registered to receive MQTT events
  *
@@ -56,7 +57,6 @@ void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event
         ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
         msg_id = esp_mqtt_client_subscribe(client, "simon/secuencia", 1);
         ESP_LOGI(TAG, "sent subscribe successful, msg_id=%d", msg_id);
-
 
         break;
     case MQTT_EVENT_DISCONNECTED:

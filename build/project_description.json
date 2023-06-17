@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "simon",
-    "project_version":    "1",
+    "project_version":    "27e921b-dirty",
     "project_path":       "/home/kali/esp/touch_sensor",
     "idf_path":           "/home/kali/esp/esp-idf",
     "build_dir":          "/home/kali/esp/touch_sensor/build",
